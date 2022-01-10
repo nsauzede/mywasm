@@ -1,0 +1,23 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt update --quiet -y
+        sudo apt install --quiet -y libsdl2-dev
+    - name: Build
+      run: make clean main
+    - name: Run tests
+      run: ./main > a.ppm
