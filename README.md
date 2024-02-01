@@ -6,6 +6,6 @@
 
 </div>
 
-[EMWorkflowBadge]: https://github.com/nsauzede/mywasm/workflows/EM/badge.svg
-[CIWorkflowBadge]: https://github.com/nsauzede/mywasm/workflows/CI/badge.svg
+[EMWorkflowBadge]: https://github.com/nsauzede/mywasm/actions/workflows/em.yml/badge.svg
+[CIWorkflowBadge]: https://github.com/nsauzede/mywasm/actions/workflows/ci.yml/badge.svg
 [WorkflowUrl]: https://github.com/nsauzede/mywasm/commits/main
